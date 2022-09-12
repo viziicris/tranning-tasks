@@ -13,4 +13,7 @@ public class ReverseWord {
             result += word.charAt(i);
         }
         return result;
+
     }
+}
+

@@ -1,8 +1,18 @@
 public class NrOfWords {
 
     public static void main(String[] args) {
-        String s1 = "hello for this world and hello my love hello hello";
-        String s2 = "hello";
+        String a1 = "hello for this world and hello my love hello for hello";
+        String a2 = "hello";
+        String a3 = "for";
+        String a4 = "love";
+        System.out.println(numberof(a1,a2) );
+        System.out.println(numberof(a1,a3) );
+        System.out.println(numberof(a1,a4) );
+
+    }
+
+
+    public static int numberof (String s1, String s2) {
         int numberof = 0;
         String[] bits = s1.split(" ");
         for (int i = 0; i < bits.length; i++) {
@@ -12,6 +22,9 @@ public class NrOfWords {
                 numberof += 0;
             }
         }
-        System.out.println(numberof);
+        return numberof;
     }
 }
+
+
+

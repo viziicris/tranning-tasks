@@ -1,8 +1,8 @@
 public class FactorialOfNumber {
     public static void main(String[] args) {
-        int number = 6;
+        int number = 17;
 
-        System.out.println(factorial(number));
+        System.out.println(factorial_rec(number));
     }
 
     public static int factorial(int number) {
@@ -11,5 +11,14 @@ public class FactorialOfNumber {
             factorial = i * factorial;
         }
         return factorial;
+    }
+
+    public static long factorial_rec(int number) {
+
+        if (number<=1){
+            return 1;
+        }else {
+            return number * factorial_rec(--number);
+        }
     }
 }
